@@ -1,2 +1,3 @@
-RewriteCond %{HTTP_HOST} ^elkongroop.ru\.ru$ [NC]
-RewriteRule ^(.*)$ http://project6088370.tilda.ws/ [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} elkongroop.ru
+RewriteRule (.*) http://project6088370.tilda.ws/$1 [R=301,L]
